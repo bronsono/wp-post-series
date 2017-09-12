@@ -13,6 +13,9 @@
 	<?php if ( is_single() && sizeof( $posts_in_series ) > 1 ) : ?>
 
 		<nav class="wp-post-series-nav">
+				<style>
+					.wp-post-series-nav {display:block !important;}
+				</style>
 			<ol>
 				<?php foreach ( $posts_in_series as $key => $post_id ) : ?>
 					<li>
